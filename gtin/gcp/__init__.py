@@ -34,7 +34,7 @@ GCP_PREFIX_FORMAT_LIST_PATH = os.path.join(  # type: str
 
 
 @functools.lru_cache(maxsize=1)
-def prefixes_lengths(local=False):
+def prefixes_lengths(local=True):
     # type: (bool) -> Dict
     """
     This function provides a current mapping of GS1 prefixes to the length
